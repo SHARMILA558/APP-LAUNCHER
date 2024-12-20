@@ -1,0 +1,37 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Launcher with Search</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>App Launcher</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for an app..." onkeyup="filterApps()">
+    </div>
+    <div class="app-grid" id="appGrid">
+      <div class="app-card" data-name="ChatGPT" onclick="openApp('https://chat.openai.com/')">
+        <img src="https://img.icons8.com/ios-filled/100/000000/chatgpt.png" alt="ChatGPT Icon">
+        <h2>ChatGPT</h2>
+      </div>
+      <div class="app-card" data-name="WhatsApp" onclick="openApp('https://www.whatsapp.com/')">
+        <img src="https://img.icons8.com/color/100/000000/whatsapp.png" alt="WhatsApp Icon">
+        <h2>WhatsApp</h2>
+      </div>
+      <div class="app-card" data-name="Instagram" onclick="openApp('https://www.instagram.com/')">
+        <img src="https://img.icons8.com/fluency/100/000000/instagram-new.png" alt="Instagram Icon">
+        <h2>Instagram</h2>
+      </div>
+      <div class="app-card" data-name="Snapchat" onclick="openApp('https://www.snapchat.com/')">
+        <img src="https://img.icons8.com/color/100/000000/snapchat.png" alt="Snapchat Icon">
+        <h2>Snapchat</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
